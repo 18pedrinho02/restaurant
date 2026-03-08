@@ -11,58 +11,41 @@
 @theme {
     --color-primary: #a67c52; /* castanho */
     --color-secondary: #efefef; /* branco */
-    --font-sans: "Mona Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
     --font-serif: "DM Serif Text", serif;
     --font-display: "Modern Negra", sans-serif;
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
 }
 
 /* 4️⃣ Reset / base */
 html, body {
     width: 100%;
     height: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: black;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-/* 5️⃣ Utilitários personalizados */
-@layer utilities {
+    nav {
+        @apply fixed z-50 w-full;
 
-    /* Centro flexível */
-    .flex-center {
-        @apply flex justify-center items-center;
-    }
+        div {
+            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+        }
 
-    .col-center {
-        @apply flex flex-col justify-center items-center;
-    }
+        p {
+            @apply font-roboto text-3xl -mb-2;
+        }
 
-    /* Section ocupa viewport */
-    .section-full {
-        @apply w-screen h-screen flex flex-col justify-center items-center;
-    }
+        a {
+            @apply cursor-pointer text-nowrap md:text-base text-sm;
+        }
 
-    /* Botões do site */
-    .btn-primary {
-        @apply px-6 py-3 bg-[#a67c52] text-white font-semibold rounded-lg hover:bg-[#8b623a] transition;
+        ul {
+            @apply flex-center lg:gap-12 gap-7;
+        }
     }
-
-    /* Inputs de formulário */
-    .input-style {
-        @apply p-3 border border-gray-300 rounded-md w-full;
-    }
-
-    /* Imagens da galeria */
-    .gallery-img {
-        @apply w-full h-64 object-cover rounded-xl;
-    }
-
-    /* Texto gradient */
-    .text-gradient {
-        background: linear-gradient(to bottom, #000, #a67c52);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
-}
