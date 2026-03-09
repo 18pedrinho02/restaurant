@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..900&family=DM+Serif+Text:ital@0;1&display=swap");
 @import "tailwindcss";
 
-/* 2️⃣ Fontes customizadas */
-@font-face {
-    font-family: "Modern Negra";
-    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
-}
 
 /* 3️⃣ Variáveis de tema (cores, fontes, etc.) */
 @theme {
@@ -16,22 +11,34 @@
     --font-display: "Modern Negra", sans-serif;
 }
 
-@utility flex-center {
-    @apply flex justify-center items-center;
-}
-
 /* 4️⃣ Reset / base */
 html, body {
     width: 100%;
     height: 100%;
     background-color: var(--color-secondary);
-    color: black;
+    color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
+
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+@utility col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+
+
+
     nav {
-        @apply fixed z-50 w-full;
+        @apply fixed z-50 w-full backdrop-blur-md bg-black/50;
 
         div {
             @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
@@ -48,4 +55,45 @@ html, body {
         ul {
             @apply flex-center lg:gap-12 gap-7;
         }
+
     }
+
+
+@layer base {
+  section {
+    @apply relative z-10 min-h-dvh w-full border border-transparent;
+  }
+
+  button {
+    @apply px-6 py-3 bg-[#a67c52] text-white font-semibold rounded-lg hover:bg-[#8b623a] transition hover:cursor-pointer;
+  }
+  
+}
+
+#hero {
+  @apply relative w-screen h-screen; /* ocupa toda a viewport */
+  background-image: url("/assets/caption.jpg");
+  background-size: cover; /* cobre toda a section, sem deformar */
+  background-position: center; /* centra a imagem */
+  background-repeat: no-repeat; /* evita repetição */
+}
+
+@layer components{
+    main {
+        @apply w-full overflow-x-hidden;
+    }
+    #hero{
+        h1 {
+            @apply md:mt-20 mt-40 text-4xl md:text-[3vw] leading-none text-center font-roboto;
+        }
+        p{
+            @apply mt-1;
+        }
+        button{
+            @apply mt-3;
+        }
+    }
+    .restaurant-img{
+        @apply absolute inset-0 w-full h-full bg-cover bg-center;
+    }
+}
