@@ -10,7 +10,7 @@ const Hero = ()=>{
 
             <div className="flex-center col-center abs-center">
                 <h1>Fine Dining Experience</h1>
-                <p>Discover unforgettable flavors</p>
+                <p className="text-center">Discover unforgettable flavors</p>
                 <button href="#reservation">Reserve a Table</button>
             </div>
 

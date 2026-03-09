@@ -72,7 +72,9 @@ html, body {
 
 #hero {
   @apply relative w-screen h-screen; /* ocupa toda a viewport */
-  background-image: url("/assets/caption.jpg");
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
   background-size: cover; /* cobre toda a section, sem deformar */
   background-position: center; /* centra a imagem */
   background-repeat: no-repeat; /* evita repetição */
@@ -84,7 +86,7 @@ html, body {
     }
     #hero{
         h1 {
-            @apply md:mt-20 mt-40 text-4xl md:text-[3vw] leading-none text-center font-roboto;
+            @apply md:mt-20 mt-40 text-4xl md:text-[4vw] leading-none text-center font-roboto;
         }
         p{
             @apply mt-1;
