@@ -30,6 +30,10 @@ html, body {
     @apply flex flex-col justify-center items-center;
 }
 
+@utility center{
+    @apply flex flex-col items-center;
+}
+
 @utility abs-center {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
@@ -37,26 +41,26 @@ html, body {
 
 
 
-    nav {
-        @apply fixed z-50 w-full backdrop-blur-md bg-black/50;
+nav {
+    @apply fixed z-50 w-full backdrop-blur-md bg-black/50;
 
-        div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
-        }
-
-        p {
-            @apply font-roboto text-3xl -mb-2;
-        }
-
-        a {
-            @apply cursor-pointer text-nowrap md:text-base text-sm;
-        }
-
-        ul {
-            @apply flex-center lg:gap-12 gap-7;
-        }
-
+    div {
+        @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
     }
+
+    p {
+        @apply font-roboto text-3xl -mb-2;
+    }
+
+    a {
+        @apply cursor-pointer text-nowrap md:text-base text-sm;
+    }
+
+    ul {
+        @apply flex-center lg:gap-12 gap-7;
+    }
+
+}
 
 
 @layer base {
@@ -79,6 +83,16 @@ html, body {
   background-position: center; /* centra a imagem */
   background-repeat: no-repeat; /* evita repetição */
 }
+
+
+#menu{
+    @apply 
+    bg-primary;
+    background-size: cover; /* cobre toda a section, sem deformar */
+  background-position: center; /* centra a imagem */
+  background-repeat: no-repeat; /* evita repetição */
+}
+
 
 @layer components{
     main {
