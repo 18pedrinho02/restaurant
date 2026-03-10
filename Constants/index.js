@@ -89,4 +89,13 @@ const menuList = [
  }
 ];
 
-export { navLinks, menuList };
+const galleryImages = [
+  { src: "https://i.pinimg.com/736x/fc/0a/24/fc0a24dba1f9a43d93768ad30e4608e7.jpg", alt: "Dish 1", caption: "Grilled Salmon" },
+  { src: "https://i.pinimg.com/736x/ce/3c/fb/ce3cfb6b672a3fe525f11345566f482d.jpg", alt: "Dish 2", caption: "Truffle Burger" },
+  { src: "https://i.pinimg.com/736x/fc/0a/24/fc0a24dba1f9a43d93768ad30e4608e7.jpg", alt: "Dish 3", caption: "Mushroom Risotto" },
+  { src: "https://i.pinimg.com/1200x/c5/c6/5f/c5c65fb0db0b42f2f1ca173b8fd38c56.jpg", alt: "Dish 4", caption: "Chocolate Lava Cake" },
+  { src: "https://i.pinimg.com/736x/ce/3c/fb/ce3cfb6b672a3fe525f11345566f482d.jpg", alt: "Dish 5", caption: "Margherita Pizza" },
+  { src: "https://i.pinimg.com/1200x/c5/c6/5f/c5c65fb0db0b42f2f1ca173b8fd38c56.jpg", alt: "Dish 6", caption: "Caesar Salad" },
+];
+
+export { navLinks, menuList, galleryImages };
