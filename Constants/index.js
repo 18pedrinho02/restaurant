@@ -13,7 +13,8 @@ const menuList = [
   description: "Fresh Atlantic salmon grilled to perfection, served with lemon butter and seasonal vegetables.",
   price: "18€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:false
+  popular: false,
+  category: "main"
  },
  {
   id: "dish-2",
@@ -21,7 +22,8 @@ const menuList = [
   description: "Stone-baked pizza with fresh mozzarella, tomato sauce, and basil leaves.",
   price: "12€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:false
+  popular: false,
+  category: "main"
  },
  {
   id: "dish-3",
@@ -29,7 +31,8 @@ const menuList = [
   description: "Arborio rice slowly cooked with mushrooms, parmesan cheese, and white wine.",
   price: "15€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:true
+  popular: true,
+  category: "main"
  },
  {
   id: "dish-4",
@@ -37,7 +40,8 @@ const menuList = [
   description: "Juicy grilled beef tenderloin served with garlic butter and roasted potatoes.",
   price: "24€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:true
+  popular: true,
+  category: "main"
  },
  {
   id: "dish-5",
@@ -45,15 +49,20 @@ const menuList = [
   description: "Creamy Alfredo pasta with grilled chicken breast and parmesan.",
   price: "16€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:false
+  popular: false,
+  category: "main"
  },
+
+ /* ENTRADAS */
+
  {
   id: "dish-6",
   name: "Caesar Salad",
   description: "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
   price: "10€",
   image: "https://i.pinimg.com/736x/17/19/9c/17199c736fa9db346ef6f02394508516.jpg",
-  popular:true
+  popular: true,
+  category: "starter"
  },
  {
   id: "dish-7",
@@ -61,15 +70,47 @@ const menuList = [
   description: "Soft tortillas filled with grilled shrimp, avocado, and spicy sauce.",
   price: "14€",
   image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
-  popular:false
+  popular: false,
+  category: "starter"
  },
+ {
+  id: "dish-11",
+  name: "Bruschetta",
+  description: "Toasted bread topped with fresh tomatoes, garlic, basil, and olive oil.",
+  price: "8€",
+  image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
+  popular: false,
+  category: "starter"
+ },
+ {
+  id: "dish-12",
+  name: "Garlic Butter Shrimp",
+  description: "Sautéed shrimp cooked in garlic butter with fresh herbs and lemon.",
+  price: "13€",
+  image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
+  popular: true,
+  category: "starter"
+ },
+ {
+  id: "dish-13",
+  name: "Stuffed Mushrooms",
+  description: "Baked mushrooms stuffed with cheese, herbs, and breadcrumbs.",
+  price: "9€",
+  image: "https://i.pinimg.com/1200x/f1/bd/fb/f1bdfb372cc99135e5f4e1c06864b601.jpg",
+  popular: false,
+  category: "starter"
+ },
+
+ /* MAIS PRATOS PRINCIPAIS */
+
  {
   id: "dish-8",
   name: "Truffle Burger",
   description: "Premium beef burger with truffle mayo, caramelized onions, and brioche bun.",
   price: "17€",
   image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
-  popular:false
+  popular: false,
+  category: "main"
  },
  {
   id: "dish-9",
@@ -77,15 +118,47 @@ const menuList = [
   description: "Traditional Spanish rice dish with shrimp, mussels, and fresh herbs.",
   price: "22€",
   image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
-  popular:true
+  popular: true,
+  category: "main"
  },
+
+ /* SOBREMESAS */
+
  {
   id: "dish-10",
   name: "Chocolate Lava Cake",
   description: "Warm chocolate cake with a molten center served with vanilla ice cream.",
   price: "9€",
   image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
-  popular:false
+  popular: false,
+  category: "dessert"
+ },
+ {
+  id: "dish-14",
+  name: "Tiramisu",
+  description: "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream.",
+  price: "8€",
+  image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
+  popular: true,
+  category: "dessert"
+ },
+ {
+  id: "dish-15",
+  name: "Cheesecake",
+  description: "Creamy cheesecake with a buttery biscuit base and berry sauce.",
+  price: "7€",
+  image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
+  popular: false,
+  category: "dessert"
+ },
+ {
+  id: "dish-16",
+  name: "Crème Brûlée",
+  description: "Rich vanilla custard topped with a caramelized sugar crust.",
+  price: "8€",
+  image: "https://i.pinimg.com/1200x/82/66/3e/82663e13738a93dffe2cf8adced42778.jpg",
+  popular: true,
+  category: "dessert"
  }
 ];
 

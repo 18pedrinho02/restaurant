@@ -47,6 +47,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 50;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .navbar p{
@@ -199,4 +201,89 @@ body {
 
 .body .content .view-menu a:hover {
     color: #e7d393; /* hover:text-yellow */
+}
+
+
+
+#menu {
+    position: relative;
+    min-height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#menu .container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    padding-top: 10rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 5rem;
+}
+
+#menu .container .mini-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    width: 100%;
+}
+
+#menu .container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#menu .container ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#menu .container ul li h3{
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: white;
+}
+
+#menu .container ul li p{
+    font-size: 0.875rem;
+}
+
+#menu .container ul li span{
+    font-size: 1.25rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+
+    #menu .container {
+        flex-direction: row;
+    }
+
+    #menu .container .mini-container {
+        width: fit-content;
+    }
+
+}
+
+/* 2xl breakpoint */
+@media (min-width: 1536px) {
+    #menu .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #menu .container ul li h3 {
+        font-size: 1.875rem;
+    }
 }
