@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar.jsx";
-// import Hero from "./Components/Hero.jsx";
+import Hero from "./Components/Hero.jsx";
 // import About from "./Components/About.jsx";
 // import Menu from "./Components/Menu.jsx";
 // import Reservation from "./Components/Reservation.jsx";
@@ -11,6 +11,7 @@ const App = () => {
   return (
     <main>
       <Navbar/>
+      <Hero/>
     </main>
   );
 };

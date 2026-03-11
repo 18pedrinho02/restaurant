@@ -6,9 +6,9 @@ import { navLinks } from '../../Constants/index.js'
 const Navbar =()=>{
      return (
 	<nav>
-	 <div class="navbar">
+	 <div className="navbar">
 		<a href="#home" className="flex items-center gap-2">
-		 <p>Belle Cousin</p>
+		 <p className='font-serif'>Belle Cousin</p>
 		</a>
 		
 		<ul>
