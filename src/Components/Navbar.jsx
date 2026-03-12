@@ -7,7 +7,7 @@ const Navbar =()=>{
      return (
 	<nav>
 	 <div className="navbar">
-		<a href="#home" className="flex items-center gap-2">
+		<a href="#hero" className="flex items-center gap-2">
 		 <p className='font-serif'>Belle Cousin</p>
 		</a>
 		

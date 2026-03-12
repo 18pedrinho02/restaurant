@@ -21,8 +21,7 @@ const About = () => {
       scrollTrigger: {
         trigger: "#about",
         start: "top 80%",
-        end: "bottom top",
-        markers:true,
+        end: "bottom 20%",
         scrub: 1
       }
     });
@@ -62,28 +61,29 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="gallery">
+        <div className="top-grid">
+            <div className="md:col-span-3">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            </div>
+            <div className="md:col-span-6">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            </div>
+            <div className="md:col-span-3">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            </div>
+        </div>
 
-      <div className="top-grid">
-        <div className="md:col-span-3">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+        <div className="bottom-grid">
+            <div className="md:col-span-8">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            </div>
+            <div className="md:col-span-4">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            </div>
         </div>
-        <div className="md:col-span-6">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
-        </div>
-        <div className="md:col-span-3">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
         </div>
       </div>
-
-      <div className="bottom-grid">
-        <div className="md:col-span-8">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
-        </div>
-        <div className="md:col-span-4">
-          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
-        </div>
-      </div>
-    </div>
   );
 };
 

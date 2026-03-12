@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar.jsx";
 import Hero from "./Components/Hero.jsx";
 import About from "./Components/About.jsx";
 import Menu from "./Components/Menu.jsx";
-// import Reservation from "./Components/Reservation.jsx";
+import Contact from "./Components/Contact.jsx";
 // import Footer from "./Components/Footer.jsx";
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
       <Hero/>
       <Menu/>
       <About/>
+      <Contact/>
     </main>
   );
 };

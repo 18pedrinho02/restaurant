@@ -394,3 +394,133 @@ body {
     flex-direction:column;
     gap:1.25rem;
 }
+
+
+
+
+#contact{
+    position: relative;
+    margin-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* md */
+@media (min-width: 768px) {
+    #contact {
+        margin-top: 5rem;
+    }
+}
+
+#contact .content{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:2.5rem;
+    min-height: 100dvh;
+}
+
+@media (min-width: 1024px) {
+    #contact .content {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    #contact .content {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+#contact .content h2{
+    font-size:3rem;
+    font-family: var(--font-serif);
+    transform:translateY(1.25rem);
+    color:#d4ac0d;
+}
+
+@media (min-width: 768px) {
+    #contact .content h2 {
+        transform: translateY(0);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    #contact .content h2 {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    #contact .content h2 {
+        font-size: 6rem;
+    }
+}
+
+#contact .content h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #f9dc68;
+}
+
+@media (min-width: 1280px) {
+    #contact .content h3 {
+        font-size: 1rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    #contact .content h3 {
+        font-size: 1.125rem;
+    }
+}
+
+#contact .content p {
+    font-size: 0.875rem;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    #contact .content p {
+        font-size: 1.5rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    #contact .content p {
+        font-size: 1.875rem;
+    }
+}
+
+
+#contact .socials{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+#contact .socials .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+#contact .socials .icons img{
+    max-width: 40px;
+}

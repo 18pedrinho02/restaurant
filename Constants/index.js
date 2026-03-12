@@ -3,7 +3,7 @@ const navLinks = [
 	{ id: "menu", title: "Menu", }, 
 	{ id: "about", title: "About Us", }, 
 	{ id: "gallery", title: "Gallery", }, 
-	{ id: "reservation", title: "Reservation", }, 
+	{ id: "contact", title: "Reservation", }, 
 ];
 
 const menuList = [
@@ -171,4 +171,32 @@ const galleryImages = [
   { src: "https://i.pinimg.com/1200x/c5/c6/5f/c5c65fb0db0b42f2f1ca173b8fd38c56.jpg", alt: "Dish 6", caption: "Caesar Salad" },
 ];
 
-export { navLinks, menuList, galleryImages };
+const daysOpen = [
+  { day: "Monday", hours: "11:00 - 22:00" },
+  { day: "Tuesday", hours: "11:00 - 22:00" },
+  { day: "Wednesday", hours: "11:00 - 22:00" },
+  { day: "Thursday", hours: "11:00 - 23:00" },
+  { day: "Friday", hours: "11:00 - 23:30" },
+  { day: "Saturday", hours: "12:00 - 23:30" },
+  { day: "Sunday", hours: "12:00 - 21:00" }
+];
+
+const socials = [
+  {
+    name: "WhatsApp",
+    url: "https://wa.me/351912345678",
+    img: "../../assets/whatsapp.png"
+  },
+  {
+    name: "Facebook",
+    url: "https://www.flaticon.com/free-icons/facebook" ,
+    img: "../../assets/facebook.png"
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/bellecousin",
+    img: "../../assets/instagram.png"
+  }
+];
+
+export { navLinks, menuList, galleryImages, daysOpen, socials };
