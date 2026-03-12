@@ -236,6 +236,10 @@ body {
     width: 100%;
 }
 
+#menu .container .mini-container h2{
+    color: #d4ac0d;
+}
+
 #menu .container ul{
     display: flex;
     flex-direction: column;
@@ -251,7 +255,7 @@ body {
 #menu .container ul li h3{
     font-family: var(--font-serif);
     font-size: 1.25rem;
-    color: white;
+    color: #f9dc68;
 }
 
 #menu .container ul li p{
@@ -286,4 +290,107 @@ body {
     #menu .container ul li h3 {
         font-size: 1.875rem;
     }
+}
+
+
+
+
+#about{
+    min-height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 1024px) { /* lg */
+    #about .container {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+#about .container h2{
+    font-size: 3rem;
+    font-family: var(--font-serif);
+    max-width: 32rem;
+}
+
+@media (min-width: 768px) { /* md */
+    #about .container h2 {
+        font-size: 3.75rem; /* md:text-6xl */
+    }
+}
+
+#about .container .sub-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1.25rem;
+}
+
+@media (min-width: 768px) { /* md */
+    #about .container .sub-content {
+        grid-column: span 4 / span 4; /* md:col-span-4 */
+        gap: 0.5rem; /* md:gap-2 */
+    }
+}
+
+#about .container .sub-content p {
+    font-size: 1.125rem; /* text-lg */
+}
+
+
+#about .top-grid,
+#about .bottom-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) { /* md */
+    #about .bottom-grid {
+        grid-template-columns: repeat(12,1fr); /* md:grid-cols-12 */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1280px) { /* xl */
+    #about .top-grid {
+        grid-template-columns: repeat(12, 1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#about .top-grid > div,
+#about .bottom-grid > div {
+    border-radius: 1.5rem; /* rounded-3xl */
+    overflow: hidden;
+    height: 18rem; /* h-72 */
+    position: relative;
+}
+
+#about .top-grid img,
+#about .bottom-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery{
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
 }
