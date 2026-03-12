@@ -2,7 +2,7 @@ const navLinks = [
 	{ id: "hero", title: "Home", }, 
 	{ id: "menu", title: "Menu", }, 
 	{ id: "about", title: "About Us", }, 
-	{ id: "gallery", title: "Gallery", }, 
+	// { id: "gallery", title: "Gallery", }, 
 	{ id: "contact", title: "Reservation", }, 
 ];
 
