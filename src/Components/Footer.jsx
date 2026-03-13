@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer style={{textAlign:"center", padding:"2rem 0"}}>
+    <footer className="footer-bottom">
       <Link to="/privacy-policy">Privacy Policy</Link>
-      <p>© 2026 Restaurant Name</p>
+      <p>© 2026 Restaurant Belle Cousin. All rights reserved</p>
+      <p>Developed by Pedro Costa</p>
     </footer>
   );
 };
