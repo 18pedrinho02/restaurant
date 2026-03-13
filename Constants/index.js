@@ -185,17 +185,17 @@ const socials = [
   {
     name: "WhatsApp",
     url: "https://wa.me/351912345678",
-    img: "../../assets/whatsapp.png"
+    img: "../assets/whatsapp.png"
   },
   {
     name: "Facebook",
     url: "https://www.flaticon.com/free-icons/facebook" ,
-    img: "../../assets/facebook.png"
+    img: "../assets/facebook.png"
   },
   {
     name: "Instagram",
     url: "https://instagram.com/bellecousin",
-    img: "../../assets/instagram.png"
+    img: "../assets/instagram.png"
   }
 ];
 
