@@ -64,13 +64,13 @@ const About = () => {
       <div className="gallery">
         <div className="top-grid">
             <div className="md:col-span-3">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            <img src="https://i.pinimg.com/1200x/72/d9/af/72d9af964d384fc2a16fd087c1062a7c.jpg" />
             </div>
             <div className="md:col-span-6">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            <img src="https://i.pinimg.com/736x/f7/46/de/f746de84d2888d26dfeda84bad78e592.jpg" />
             </div>
             <div className="md:col-span-3">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            <img src="https://i.pinimg.com/1200x/8d/b5/dd/8db5ddfd1828d38ddbb00a0f628d0b3a.jpg" />
             </div>
         </div>
 
@@ -79,7 +79,7 @@ const About = () => {
             <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
             </div>
             <div className="md:col-span-4">
-            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" />
+            <img src="https://i.pinimg.com/1200x/57/c4/e6/57c4e687343851e2025f282f39577339.jpg" />
             </div>
         </div>
         </div>
